@@ -1,0 +1,11 @@
+# All idea folders
+.idea/
+
+# All __pycache__
+__pycache__/
+
+# sqlite
+*.sqlite3
+
+# venv
+venv/
