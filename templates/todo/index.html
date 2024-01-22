@@ -12,9 +12,9 @@
            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),
                        0 6px 20px 0 rgba(0,0,0,0.39);
            background: lightgreen;
-           margin-bottom : 5%;
+           margin-bottom : 3%;
            border-radius: 25px;
-           padding : 2%;
+           padding : 1%;
            overflow: auto;
            resize: both;
            text-overflow: ellipsis;
@@ -66,8 +66,8 @@
 
                     <p style="font-family: Papyrus; text-align: right">{{i.date}}</p>
 
-                    <br><br>
-                    <form action="/del/{{i.id}}" method="POST" style="padding-right: 4%; padding-bottom: 3%;">
+                  
+                    <form action="/del/{{i.id}}" method="POST" style="padding-right: 4%; padding-bottom: 1%;">
                         {% csrf_token %}
                         <button value="remove" type="submit" class="btn btn-primary" style="float: right;" id="remove"> remove  </button>
                     </form>
@@ -81,7 +81,7 @@
                 <form action="" method="POST">
                     {% csrf_token %}
 
-                    {{forms}}
+                    {{form}}
 
                     <center>
                         <input type="submit" class="btn btn-primary" value="submit" id="submit">

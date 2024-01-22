@@ -15,7 +15,7 @@ def home(request):
             return redirect('home')
 
     page = {
-        'forms': form,
+        'form': form,
         'list': item_list,  
         'title': 'TODO LIST'
     }
